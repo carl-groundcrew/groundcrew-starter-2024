@@ -27,7 +27,7 @@ a {
 .grid {
   display: grid;
   grid-template-columns: repeat(3,1fr);
-  grid-gap: 20px;
+  gap: 20px;
 }
 
 /* ------------ Flex Styles ------------ */
