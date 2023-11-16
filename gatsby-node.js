@@ -1,8 +1,8 @@
-const path = require("path")
+// const path = require("path")
 
-exports.createPages = async ({ graphql, actions: { createPage } }) => {
-  const { data } = await graphql(`
-    query TemplateQuery {
-      
-  `)
-}
+// exports.createPages = async ({ graphql, actions: { createPage } }) => {
+//   const { data } = await graphql(`
+//     query TemplateQuery {
+//     }
+//   `)
+// }
