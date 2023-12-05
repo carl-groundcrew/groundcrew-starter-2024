@@ -5,4 +5,14 @@
 //     query TemplateQuery {
 //     }
 //   `)
+
+// const { destructuredData } = data
+
+// destructuredData.nodes.forEach(({ slug }) => {
+//   return createPage({
+//     path: `/path/${slug}`,
+//     component: path.resolve("./src/templates/template.js"),
+//     context: { slug },
+//   })
+// })
 // }

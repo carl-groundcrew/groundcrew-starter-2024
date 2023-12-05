@@ -1,0 +1,26 @@
+/*--------------------------------------------------------------
+## Utility Styling
+--------------------------------------------------------------*/
+
+@mixin icon($url) {
+  background-image: url($url);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+@mixin customScrollbar($size: 8px, $thumb-color: #1e1e1e, $background-color: transparent) {
+  &::-webkit-scrollbar {
+    width: $size;
+    height: $size;
+  }
+  &::-webkit-scrollbar-thumb {
+    border-radius: 100vw;
+    background: $thumb-color;
+  }
+  &::-webkit-scrollbar-track {
+    background: $background-color;
+  }
+
+  scrollbar-color: $thumb-color $background-color;
+}

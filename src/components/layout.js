@@ -6,8 +6,8 @@ import Footer from "./footer"
 
 import "../scss/site.scss"
 
-const Layout = ({ children }) => {
-  const data = useStaticQuery(graphql`
+export default function Layout({ children }) {
+  const { site } = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
         siteMetadata {
@@ -16,13 +16,12 @@ const Layout = ({ children }) => {
       }
     }
   `)
+
   return (
     <>
-      <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
+      <Header siteTitle={site.siteMetadata?.title || `Title`} />
       <main>{children}</main>
       <Footer />
     </>
   )
 }
-
-export default Layout
