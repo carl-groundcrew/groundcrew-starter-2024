@@ -3,12 +3,11 @@
 --------------------------------------------------------------*/
 
 body {
-  margin: 0px;
-  padding: 0px;
   color: #000;
   font-size: 14px;
   font-family: sans-serif;
   -webkit-font-smoothing: antialiased;
+  font-smooth: always;
   text-rendering: optimizeLegibility;
   ::selection {
     background: #d2fd78;
