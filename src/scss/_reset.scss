@@ -13,6 +13,11 @@
   font: inherit;
   color: inherit;
   box-sizing: border-box;
+  font-synthesis: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-smooth: always;
+  text-rendering: optimizeLegibility;
 }
 
 a,
