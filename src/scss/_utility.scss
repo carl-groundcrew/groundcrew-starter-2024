@@ -2,11 +2,11 @@
 ## Utility Styling
 --------------------------------------------------------------*/
 
-@mixin icon($url) {
+@mixin icon($url, $size: contain) {
   background-image: url($url);
   background-position: center center;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: $size;
 }
 
 @mixin customScrollbar($size: 8px, $thumb-color: #1e1e1e, $background-color: transparent) {
