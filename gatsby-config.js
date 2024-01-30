@@ -10,6 +10,21 @@ module.exports = {
     siteUrl: `https://groundcrew.com.au`,
   },
   plugins: [
+    {
+      resolve: `gatsby-plugin-google-gtag`,
+      options: {
+        trackingIds: [process.env.GATSBY_GOOGLE_GTAG],
+        gtagConfig: {
+          anonymize_ip: true,
+          cookie_expires: 0,
+          send_page_view: true,
+        },
+        pluginConfig: {
+          head: true,
+          respectDNT: false,
+        },
+      },
+    },
     `gatsby-plugin-image`,
     {
       resolve: `gatsby-source-filesystem`,
