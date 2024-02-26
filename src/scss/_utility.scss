@@ -3,24 +3,30 @@
 --------------------------------------------------------------*/
 
 @mixin icon($url, $size: contain) {
-  background-image: url($url);
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: $size;
+    background-image: url($url);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: $size;
 }
 
-@mixin customScrollbar($size: 8px, $thumb-color: #1e1e1e, $background-color: transparent) {
-  &::-webkit-scrollbar {
-    width: $size;
-    height: $size;
-  }
-  &::-webkit-scrollbar-thumb {
-    border-radius: 100vw;
-    background: $thumb-color;
-  }
-  &::-webkit-scrollbar-track {
-    background: $background-color;
-  }
+/* ------------ Scrollbar Styles ------------ */
 
-  scrollbar-color: $thumb-color $background-color;
+::-webkit-scrollbar {
+    width: 7px;
+    height: 7px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 100vw;
+    background: black;
+    -webkit-box-shadow: none;
+}
+
+::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0);
+    -webkit-box-shadow: none;
+}
+
+::-webkit-scrollbar-thumb:window-inactive {
+    background: none;
 }
